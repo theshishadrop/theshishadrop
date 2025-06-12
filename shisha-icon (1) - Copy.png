@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Shisha Drop</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #111;
+      color: #f0e6d2;
+      position: relative;
+      overflow-x: hidden;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200%;
+      height: 100%;
+      background: url('https://i.imgur.com/zr0qsTg.gif') repeat-x center/cover;
+      opacity: 0.08;
+      animation: smokeMove 60s linear infinite;
+      z-index: -1;
+    }
+    @keyframes smokeMove {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px 20px;
+    }
+    header img {
+      max-width: 300px;
+      margin-bottom: 20px;
+    }
+    .hero {
+      text-align: center;
+      padding: 20px 20px 40px;
+    }
+    .hero h1 {
+      font-size: 2.5em;
+      color: #c4b27c;
+      font-family: 'Playfair Display', serif;
+    }
+    .hero p {
+      max-width: 600px;
+      margin: 0 auto;
+      font-size: 1.2em;
+      line-height: 1.6;
+      color: #d6caa2;
+    }
+    .pricing {
+      background-color: #1a1a1a;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .pricing h2 {
+      color: #c4b27c;
+      margin-bottom: 20px;
+    }
+    .pricing .package-box {
+      background-color: #222;
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      margin: 20px;
+      display: inline-block;
+      vertical-align: top;
+    }
+    .package-box h3 {
+      color: #c4b27c;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: center;
+    }
+    .package-box img {
+      height: 24px;
+    }
+    .package-box ul {
+      list-style: none;
+      padding: 0;
+      text-align: left;
+    }
+    .contact {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .contact h2 {
+      color: #c4b27c;
+    }
+    .contact p {
+      margin: 10px 0;
+      color: #e0d7b3;
+    }
+    footer {
+      text-align: center;
+      background-color: #0e0e0e;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="the shisha drop.png" alt="The Shisha Drop Logo">
+  </header>
+
+  <section class="hero">
+    <h1>Instant Atmosphere, Just Add Friends</h1>
+    <p>The Shisha Drop delivers premium mobile shisha setups straight to your door — whether it's for personal relaxation, small gatherings, or stylish events across North London and Hertfordshire. We bring the lounge experience to your home or venue, with everything handled for you.</p>
+  </section>
+
+  <section class="pricing">
+    <h2>Packages</h2>
+    <div class="package-box">
+      <h3><img src="shisha-icon.png" alt="Shisha Icon"> Standard Package</h3>
+      <p><strong>£40</strong></p>
+      <ul>
+        <li>1 Shisha</li>
+        <li>1 Flavour</li>
+        <li>10 Coals</li>
+        <li>2 Plastic Tips</li>
+        <li>Disposable Pipe</li>
+        <li>Coal Burner Rental</li>
+        <li>Delivery & Collection</li>
+      </ul>
+    </div>
+    <div class="package-box">
+      <h3><img src="shisha-icon.png" alt="Shisha Icon"><img src="shisha-icon.png" alt="Shisha Icon"> Double Package</h3>
+      <p><strong>£75</strong></p>
+      <ul>
+        <li>2 Shishas</li>
+        <li>2 Flavours</li>
+        <li>20 Coals</li>
+        <li>4 Plastic Tips</li>
+        <li>2 Disposable Pipes</li>
+        <li>1 Coal Burner</li>
+        <li>Delivery & Collection</li>
+      </ul>
+    </div>
+    <div class="package-box">
+      <h3><img src="shisha-icon.png" alt="Shisha Icon"><img src="shisha-icon.png" alt="Shisha Icon"><img src="shisha-icon.png" alt="Shisha Icon"> Triple Package</h3>
+      <p><strong>£110</strong></p>
+      <ul>
+        <li>3 Shishas</li>
+        <li>3 Flavours</li>
+        <li>30 Coals</li>
+        <li>6 Plastic Tips</li>
+        <li>3 Disposable Pipes</li>
+        <li>1 Coal Burner</li>
+        <li>Delivery & Collection</li>
+      </ul>
+    </div>
+
+    <h2 style="margin-top: 50px;">Extras</h2>
+    <ul>
+      <li>Extra Flavour/Head: <strong>£15</strong> (includes 10 complimentary coals)</li>
+      <li>Extra Charcoal: <strong>10 coals for £2.50</strong></li>
+      <li>Event Packages: <strong>from £100</strong> (tailored quotes available)</li>
+    </ul>
+  </section>
+
+  <section class="contact">
+    <h2>Get in Touch</h2>
+    <p>Email: <a href="mailto:bookings@theshishadrop.co.uk">bookings@theshishadrop.co.uk</a></p>
+    <p>Instagram: <a href="https://instagram.com/theshishadrop" target="_blank">@TheShishaDrop</a></p>
+    <p>Phone: 07400 123 456</p>
+  </section>
+
+  <footer>
+    &copy; 2025 The Shisha Drop. All rights reserved.
+  </footer>
+</body>
+</html>
